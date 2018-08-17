@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY', default='put your super secret key here')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=config.boolean)
+DEBUG = config('DEBUG', default='True', cast=config.boolean)
 
 ALLOWED_HOSTS = config(
     'ALLOWED_HOSTS',
