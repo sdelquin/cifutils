@@ -1,0 +1,23 @@
+<h4><i class="fa fa-table"></i> Extracted parameters</h4>
+<span class="label label-success">{{ results.processed_lines }} lines processed in {{ results.elapsed_time | number }} seconds</span>
+<br/><br/>
+<div class="row">
+    <div class="col-md-4">
+        <form action="/api/extract/pdf/" method="post" name="form_pdf">
+            <a class="linknohref" onclick="form_pdf.submit();"><i class="fa fa-download"></i> Download as pdf</a>
+            <input type="hidden" value="{{ results.objects }}" name="extracted_parameters"/>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <form action="/api/extract/xlsx/" method="post" name="form_xlsx">
+            <a class="linknohref" onclick="form_xlsx.submit();"><i class="fa fa-download"></i> Download as excel</a>
+            <input type="hidden" value="{{ results.objects }}" name="extracted_parameters"/>
+        </form>
+    </div>
+</div>
+<table class="table results">
+    <tr ng-repeat="r in results.objects">
+        <td><span tooltip="{{ r.parameter_in_file }}" tooltip-placement="right">{{ r.title }}</span></td>
+        <td>{{ r.value }}</td>
+    </tr>
+</table>

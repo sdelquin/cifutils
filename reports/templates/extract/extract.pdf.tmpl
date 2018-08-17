@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="{{ base_dir }}/base/base.css">
+    <link rel="stylesheet" href="{{ base_dir }}/extract/extract.css">
+</head>
+<body>
+    <h1>Extracted parameters from CIF</h1>
+    <table>
+    {% for p in params %}
+        <tr>
+            <td>{{ p.parameter_in_file }}</td>
+            <td>{{ p.title }}</td>
+            <td class="value">{{ p.value }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

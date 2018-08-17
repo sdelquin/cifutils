@@ -1,0 +1,48 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.header {
+  font-family: 'Varela Round', sans-serif;
+  height: 75px;
+  max-height: 75px;
+}
+.footer {
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 15px;
+  height: 50px;
+  max-height: 50px;
+}
+.header a {
+  color: inherit;
+}
+.header a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.main {
+  margin-top: 95px;
+  margin-bottom: 70px;
+}
+.feature-title {
+  margin-bottom: 20px;
+}
+.results {
+  margin-top: 20px;
+}
+.linknohref {
+  cursor: pointer;
+}
+.jumbotron {
+  margin-top: 150px;
+}
+.secondary {
+  margin-top: 20px;
+}
+.navbar-default {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.15);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.15);
+  box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.15);
+}

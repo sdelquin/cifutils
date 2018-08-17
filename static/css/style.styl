@@ -1,0 +1,58 @@
+header-height = 75px
+footer-height = 50px
+gap = 20px
+
+box-shadow(params)
+    -webkit-box-shadow: params
+    -moz-box-shadow: params
+    box-shadow: params 
+
+html
+    overflow-y: scroll
+
+body
+    font-family: 'Helvetica Neue', sans-serif
+
+.header
+    font-family: 'Varela Round', sans-serif
+    height: header-height
+    max-height: header-height
+
+.footer
+    font-family: 'Varela Round', sans-serif
+    padding-top: 15px
+    height: footer-height
+    max-height: footer-height
+
+// .menu
+//     margin-top: header-height + 20px
+//     margin-bottom: 20px
+
+.header
+    a
+        color: inherit
+        &:hover
+            text-decoration: none
+            cursor: pointer
+
+.main
+    margin-top: header-height + gap
+    margin-bottom: footer-height + gap
+
+.feature-title
+    margin-bottom: 20px
+
+.results
+    margin-top: 20px
+
+.linknohref
+    cursor: pointer
+
+.jumbotron
+    margin-top: 150px
+
+.secondary
+    margin-top: 20px
+
+.navbar-default
+    box-shadow(0px 5px 5px 0px rgba(50, 50, 50, 0.15))

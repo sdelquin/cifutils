@@ -1,0 +1,8 @@
+*.pyc
+*.sqlite3
+migrations
+.well-known
+.vscode
+.env
+*.log
+.DS_Store

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: regular;
+  src: url("NewsCycle-Regular.ttf");
+}
+@font-face {
+  font-family: regular;
+  src: url("NewsCycle-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: title;
+  src: url("YanoneKaffeesatz-Regular.otf");
+}
+@font-face {
+  font-family: title;
+  src: url("YanoneKaffeesatz-Bold.otf");
+  font-weight: bold;
+}
