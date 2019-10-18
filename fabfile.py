@@ -9,4 +9,4 @@ def deploy():
         run('git pull')
         run('pipenv install')
         run('pipenv run python manage.py collectstatic --noinput')
-        run('supctl restart cifutils')
+        run('supervisorctl restart cifutils')
