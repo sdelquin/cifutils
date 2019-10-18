@@ -6,3 +6,4 @@ migrations
 .env
 *.log
 .DS_Store
+static_root
