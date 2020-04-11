@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd $(dirname $0)
-source $(pipenv --venv)/bin/activate
-exec uwsgi --ini uwsgi.ini
+source ~/.virtualenvs/ciap/bin/activate
+cd "$(dirname "$0")"
+exec gunicorn -c gunicorn.conf.py cifutils.wsgi:application
