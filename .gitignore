@@ -7,3 +7,4 @@ migrations
 *.log
 .DS_Store
 static_root
+.python-version
