@@ -1,7 +1,7 @@
 [project]
 name = "cifutils"
 version = "0.1.0"
-requires-python = ">=3.8"
+requires-python = "==3.8.19"
 dependencies = [
     "django==2.2",
     "jinja2==3.0.3",
@@ -10,10 +10,5 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = [
-    "ipython>=8.12.3",
-    "pytest>=8.3.5",
-]
-prod = [
-    "gunicorn>=23.0.0",
-]
+dev = ["ipython>=8.12.3", "pytest>=8.3.5"]
+prod = ["gunicorn>=23.0.0"]
