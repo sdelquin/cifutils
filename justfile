@@ -42,3 +42,7 @@ deploy:
     uv run ./manage.py migrate
     uv run ./manage.py collectstatic --no-input
     supervisorctl restart cifutils
+
+# Open a Django shell
+@sh:
+    uv run ./manage.py shell
