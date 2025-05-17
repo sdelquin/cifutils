@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")"
 source .venv/bin/activate
-exec gunicorn -c gunicorn.conf.py cifutils.wsgi:application
+exec gunicorn -b unix:/tmp/cifutils.sock cifutils.wsgi:application
